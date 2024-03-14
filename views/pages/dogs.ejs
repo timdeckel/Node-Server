@@ -8,6 +8,12 @@
 </head>
 <body>
     <%- include("../partials/header.ejs") %>
+    <!-- ha en if statement baserad på booleanen i dog router  => puppy routern. -->
+    if(isPuppy){
+        <!-- puppy partial -->
+    } else if (isWolf) {
+        <!-- wolf partial -->
+    }
     <%- include("../partials/main-content.ejs") %>
 </body>
 </html>
