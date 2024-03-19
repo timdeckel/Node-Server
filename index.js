@@ -7,7 +7,7 @@ import chalk from "chalk";
 import {homeData} from "./data/home-data.js";
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 const fs = import('fs'); // filesystem thingy for later
 
 app.use(express.static('public'));
