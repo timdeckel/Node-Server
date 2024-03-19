@@ -1,15 +1,16 @@
-export const catData = {
-    pageTitle: "Cat Page!",
-    mainHeader: "SERVE YOUR FELINE OVERLORDS!!!",
-    textContent: "Cats, are the supreme being of your universe just so you know."
-}
 
-function Animal(name, type, food, size, description) { // yes this should probably be in its own file
+function Animal(name, type, food, size, description) { 
     this.name = name,
     this.type = type,
     this.food = food,
     this.size = size,
     this.description = description
+}
+
+export const catData = {
+    pageTitle: "Cat Page!",
+    mainHeader: "SERVE YOUR FELINE OVERLORDS!!!",
+    textContent: "Cats, are the supreme being of your universe just so you know."
 }
 
 export const catList = [

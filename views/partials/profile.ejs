@@ -1,11 +1,17 @@
 <div class="main-container">
     <div class="main-content">
         <h1> <%= mainHeader %></h1>
-        <section class="profile-text">
-            <p> <%= `${currentCat.type}` %></p>
-            <p> <%= `${currentCat.food}` %></p>
-            <p> <%= `${currentCat.size}` %></p>
-            <p> <%= `${currentCat.description}` %></p>
+        <section class="profile-wrapper">
+            <div class="profile-text">
+                <p> <%= `${currentCat.type}` %></p>
+                <p> <%= `${currentCat.food}` %></p>
+                <p> <%= `${currentCat.size}` %></p>
+                <p> <%= `${currentCat.description}` %></p>
+            </div>
+            <section class="profile-image">
+                <img class="small-animal-img" src="<%= `../../Images/${currentCat.name}.jpg`%>" height="200px" width="200px"> </img>
+                <p><%= `${currentCat.name}` %></p>
+            </section>
         </section>
     </div>
 </div>
