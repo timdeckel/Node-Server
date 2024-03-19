@@ -26,7 +26,7 @@ dogRouter.get('/puppies', (req, res) => {
     })
 })
 
-dogRouter.get('wolf', (req, res) => {
+dogRouter.get('/wolf', (req, res) => {
     res.render("pages/dogs", {
         pageTitle: "wolf!",
         mainHeader: "soo scary!",
