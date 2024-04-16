@@ -1,6 +1,6 @@
 <div class="sidebar">
+    <h2>List of Cats</h2>
     <ul>
-        <h2>List of Cats</h2>
         <% catList.forEach(function(cat) { %>
             <li><a class="sidebar-link clickable-link" href="/cats/<%= cat.name %>"><%= cat.name %></a></li>
         <% }); %>
